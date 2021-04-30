@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YuzTanima.Business", "YuzTanima.Business\YuzTanima.Business.csproj", "{26753E3E-27FA-4036-BC84-BDECA6B188A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YuzTanima.DataAccess", "YuzTanima.DataAccess\YuzTanima.DataAccess.csproj", "{B5AC83DA-9B02-429A-936A-0451820858BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YuzTanima.Core", "YuzTanima.Core\YuzTanima.Core.csproj", "{5D0BD2BB-76CD-4EE5-8F33-39951F3CBA2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YuzTanima.Entities", "YuzTanima.Entities\YuzTanima.Entities.csproj", "{D33694C8-CE70-41F6-A810-18402A877162}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YuzTanima.ConsoleApp", "YuzTanima.ConsoleApp\YuzTanima.ConsoleApp.csproj", "{333A61F1-EA65-473F-A507-52A4F409D697}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YuzTanima.WebService", "YuzTanima.WebService\YuzTanima.WebService.csproj", "{DDEB5874-971C-4442-91FC-79B7686711D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26753E3E-27FA-4036-BC84-BDECA6B188A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26753E3E-27FA-4036-BC84-BDECA6B188A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26753E3E-27FA-4036-BC84-BDECA6B188A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26753E3E-27FA-4036-BC84-BDECA6B188A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5AC83DA-9B02-429A-936A-0451820858BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5AC83DA-9B02-429A-936A-0451820858BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5AC83DA-9B02-429A-936A-0451820858BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5AC83DA-9B02-429A-936A-0451820858BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D0BD2BB-76CD-4EE5-8F33-39951F3CBA2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D0BD2BB-76CD-4EE5-8F33-39951F3CBA2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D0BD2BB-76CD-4EE5-8F33-39951F3CBA2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D0BD2BB-76CD-4EE5-8F33-39951F3CBA2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D33694C8-CE70-41F6-A810-18402A877162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D33694C8-CE70-41F6-A810-18402A877162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D33694C8-CE70-41F6-A810-18402A877162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D33694C8-CE70-41F6-A810-18402A877162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{333A61F1-EA65-473F-A507-52A4F409D697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{333A61F1-EA65-473F-A507-52A4F409D697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{333A61F1-EA65-473F-A507-52A4F409D697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{333A61F1-EA65-473F-A507-52A4F409D697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDEB5874-971C-4442-91FC-79B7686711D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDEB5874-971C-4442-91FC-79B7686711D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDEB5874-971C-4442-91FC-79B7686711D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDEB5874-971C-4442-91FC-79B7686711D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A0CEAD0-31B0-43B0-8D46-A81DAE4428A2}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YuzTanima.Core\YuzTanima.Core.csproj" />
+    <ProjectReference Include="..\YuzTanima.DataAccess\YuzTanima.DataAccess.csproj" />
+    <ProjectReference Include="..\YuzTanima.Entities\YuzTanima.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

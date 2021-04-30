@@ -1,0 +1,9 @@
+C:\Users\ibrah\Source\Repos\YuzTanima\YuzTanima.Core\bin\Debug\netstandard2.0\YuzTanima.Core.deps.json
+C:\Users\ibrah\Source\Repos\YuzTanima\YuzTanima.Core\bin\Debug\netstandard2.0\YuzTanima.Core.dll
+C:\Users\ibrah\Source\Repos\YuzTanima\YuzTanima.Core\bin\Debug\netstandard2.0\YuzTanima.Core.pdb
+C:\Users\ibrah\Source\Repos\YuzTanima\YuzTanima.Core\obj\Debug\netstandard2.0\YuzTanima.Core.csprojAssemblyReference.cache
+C:\Users\ibrah\Source\Repos\YuzTanima\YuzTanima.Core\obj\Debug\netstandard2.0\YuzTanima.Core.AssemblyInfoInputs.cache
+C:\Users\ibrah\Source\Repos\YuzTanima\YuzTanima.Core\obj\Debug\netstandard2.0\YuzTanima.Core.AssemblyInfo.cs
+C:\Users\ibrah\Source\Repos\YuzTanima\YuzTanima.Core\obj\Debug\netstandard2.0\YuzTanima.Core.dll
+C:\Users\ibrah\Source\Repos\YuzTanima\YuzTanima.Core\obj\Debug\netstandard2.0\YuzTanima.Core.pdb
+C:\Users\ibrah\Source\Repos\YuzTanima\YuzTanima.Core\obj\Debug\netstandard2.0\YuzTanima.Core.csproj.CoreCompileInputs.cache
