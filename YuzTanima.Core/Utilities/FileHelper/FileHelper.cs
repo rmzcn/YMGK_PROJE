@@ -42,11 +42,9 @@ namespace YuzTanima.Core.Utilities.FileHelper
 
             var creatingUniqueFilename = ziyaretciId.ToString() + fileExtension;
 
-            string result = $@"{Environment.CurrentDirectory + @"\wwwroot\Images"}\{creatingUniqueFilename}";
-
+            string result = $@"/Users/cenkkaraboa/Desktop/son/YuzTanima/YuzTanima.WebService/wwwroot/Images/{creatingUniqueFilename}";
             return (result, $"\\Images\\{creatingUniqueFilename}");
         }
-
 
 
     }

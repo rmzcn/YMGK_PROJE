@@ -46,6 +46,9 @@ namespace YuzTanima.WebService
             services.AddSingleton<IKameralarDal, EfKameralarDal>();
             services.AddSingleton<IKameralarService, KameralarManager>();
 
+            services.AddSingleton<IRaporlarDal, EfRaporlarDal>();
+            services.AddSingleton<IRaporlarService, RaporlarManager>();
+
             services.AddCors(options =>
             {
                 // The CORS policy is open for testing purposes. In a production application, you should restrict it to known origins.

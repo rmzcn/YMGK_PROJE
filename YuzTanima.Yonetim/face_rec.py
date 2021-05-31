@@ -1,22 +1,22 @@
 import sys
+
 #sys.path.append('/usr/local/lib/python3.8/site-packages')
 sys.path.append('/Users/cenkkaraboa/miniforge3/lib/python3.9/site-packages')
-
+import os
+import glob
+import requests
 import face_recognition  as fr
 import os                       #dosya okuma 
 import cv2                      #
 import numpy as np              # matrislerdeki işlemler için
 from time import sleep          #
 import face_recognition 
-
+import requests
+import urllib3
 
 # videonun çözünürlük , fps ve dosya türünü belirtiyor 
-video_capture = cv2.VideoCapture("test.mp4")  
-video_capture.set(cv2.CAP_PROP_BUFFERSIZE, 2)
-W, H = 500, 500
-video_capture.set(cv2.CAP_PROP_FRAME_WIDTH, W)
-video_capture.set(cv2.CAP_PROP_FRAME_HEIGHT, H)
-video_capture.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'))
+
+urllib3.disable_warnings()
 
 #video içinden resim çekme
 def get_image():
@@ -37,15 +37,29 @@ def get_encoded_faces():
 
     return encoded
 
-faces = get_encoded_faces()   #yüz dosyalarının listesini getiiryor.
-faces_encoded = list(faces.values()) #dosyaların değerlerini sayısal çeviriyor ve listeliyor.
-known_face_names = list(faces.keys())   #dosyalarının idlerini belirliyor.
-
 
 
 i = 0
+belge = ''
+sımdı = 'x'
+sonraki = 'y'
+changeCamera = 0 
+
+
 #Kamera sürekli açık kalmasını sağlıyor
 while True:
+    with os.scandir("/Users/cenkkaraboa/Desktop/son/YuzTanima/YuzTanima.WebService/wwwroot/KameraId/") as tarama:
+     for belge in tarama:
+        if belge.name.endswith("txt"):
+            belge = belge.name.split('.')[0]
+            
+    
+    if belge != sımdı :
+        sımdı = belge
+        video_capture = cv2.VideoCapture("test.mp4")
+        faces = get_encoded_faces()   #yüz dosyalarının listesini getiiryor.
+        faces_encoded = list(faces.values()) #dosyaların değerlerini sayısal çeviriyor ve listeliyor.
+        known_face_names = list(faces.keys())   #dosyalarının idlerini belirliyor.
     i = i + 1
     #------ videoyu oepncv de okunabilir hale getiriyor
   
@@ -82,37 +96,39 @@ while True:
 
         face_distances = face_recognition.face_distance(faces_encoded, face_encoding)
         best_match_index = np.argmin(face_distances)
+
+       
         if matches[best_match_index]:
-            name = known_face_names[best_match_index]
+            
+            url = 'http://localhost:5000/api/report/izinsorgula'            
+            myobj = {'ziyaretciId': known_face_names[best_match_index],'kameraId':belge }
+            headers = {'Content-Type': 'application/json', 'charset': 'utf-8'}
+
+            r = requests.post(url ,json =  myobj,headers=headers,verify=False).json()
+        
+            if r['success']: 
+                name = known_face_names[best_match_index]
+                face_names.append(name)  
+            else :
+                name = "izni yok"
+                face_names.append(name)  
+           
+        else :
+            name = "kayıt olmayan"
             face_names.append(name)
-
+       
         for (top, right, bottom, left), name in zip(face_locations, face_names):
-
-            #yüzün kareye çizildiği karenin rengi
+              
             cv2.rectangle(frame, (left-20, top-20), (right+20, bottom+20), (0,  0, 255), 2)
             cv2.rectangle(frame, (left-20, bottom -15), (right+20, bottom+20), (0, 0, 255), cv2.FILLED)
-            #yüzün kareye çizildiği karenin rengi   
-
-            #resmin altına isim yazıyor
             font = cv2.FONT_HERSHEY_DUPLEX
             cv2.putText(frame, name, (left -20, bottom + 15), font, 1.0, (255, 0, 0), 2)
 
-
-   # cv2.imshow('Video', frame)
-    
-    # images = get_image()    
-    # file =  "222.png"
-    # cv2.imwrite(file,frame) 
-
-
-  
-    file =  "1.png"
-    path = '/Users/cenkkaraboa/Desktop/web/src/img'
-    cv2.imwrite(os.path.join(path , file), frame)
-    
  
-    print("dadadada")
-    print((i))
+
+    file =  "1.jpg"
+    path = '/Users/cenkkaraboa/Desktop/son/web/src/img'
+    cv2.imwrite(os.path.join(path , file), frame)
     #çıkış için
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break 

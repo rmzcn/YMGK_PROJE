@@ -5912,37 +5912,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ibrah\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/cenkkaraboa/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ibrah\\source\\repos\\YuzTanima\\YuzTanima.ConsoleApp\\YuzTanima.ConsoleApp.csproj",
+      "projectUniqueName": "/Users/cenkkaraboa/Desktop/son/YuzTanima/YuzTanima.ConsoleApp/YuzTanima.ConsoleApp.csproj",
       "projectName": "YuzTanima.ConsoleApp",
-      "projectPath": "C:\\Users\\ibrah\\source\\repos\\YuzTanima\\YuzTanima.ConsoleApp\\YuzTanima.ConsoleApp.csproj",
-      "packagesPath": "C:\\Users\\ibrah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ibrah\\source\\repos\\YuzTanima\\YuzTanima.ConsoleApp\\obj\\",
+      "projectPath": "/Users/cenkkaraboa/Desktop/son/YuzTanima/YuzTanima.ConsoleApp/YuzTanima.ConsoleApp.csproj",
+      "packagesPath": "/Users/cenkkaraboa/.nuget/packages/",
+      "outputPath": "/Users/cenkkaraboa/Desktop/son/YuzTanima/YuzTanima.ConsoleApp/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ibrah\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/cenkkaraboa/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\ibrah\\source\\repos\\YuzTanima\\YuzTanima.DataAccess\\YuzTanima.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\ibrah\\source\\repos\\YuzTanima\\YuzTanima.DataAccess\\YuzTanima.DataAccess.csproj"
+            "/Users/cenkkaraboa/Desktop/son/YuzTanima/YuzTanima.DataAccess/YuzTanima.DataAccess.csproj": {
+              "projectPath": "/Users/cenkkaraboa/Desktop/son/YuzTanima/YuzTanima.DataAccess/YuzTanima.DataAccess.csproj"
             }
           }
         }
@@ -5955,6 +5950,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -5970,7 +5966,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
       }
     }
   }

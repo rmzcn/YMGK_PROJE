@@ -48,5 +48,15 @@ namespace YuzTanima.Business.Concrete
 
             return new SuccessResult(Messages.CalisanAdded);
         }
+
+        public IDataResult<Calisanlar> GetCalisan(Guid calisanId)
+        {
+            return new SuccessDataResult<Calisanlar>(_calisanlarDal.Get(x => x.calisanId == calisanId));
+        }
+
+        public IDataResult<List<GetCalisanlarDto>> GetCalisanlar()
+        {
+            return new SuccessDataResult<List<GetCalisanlarDto>>(_calisanlarDal.CalisanlariGetir());
+        }
     }
 }
